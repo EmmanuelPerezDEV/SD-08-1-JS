@@ -47,8 +47,10 @@ switch (task) {
     break;
   case 5:
     globalThis.Player = task5.Player;
-    const player5 = new Player("Grog", 4);
+    const player5 = new Player("Grog", 4,5);
     console.log(player5);
+    player5.levelUp();
+    console.log(player5.info());
     break;
   case 6:
     globalThis.Player = task6.Player;
